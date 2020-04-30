@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "EvogriaIt";
+    font-weight: normal;
+    src: url("../Fonts/EvogriaItalic.otf");
+    format: ("opentype");
+}
+
+@font-face { 
+    font-family: "Avenir";
+    font-weight: normal;
+    src: url("../Fonts/Avenir\ Next.ttc"); 
+    format: ("opentype"); 
+}
+
+@font-face { 
+    font-family: "AvenirLight";
+    font-weight: normal;
+    src: url("../Fonts/Avenir.ttc"); 
+    format: ("opentype"); 
+}

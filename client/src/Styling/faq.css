@@ -1,0 +1,24 @@
+.faq-wrap {
+    margin: 5rem; 
+    font-family: 'AvenirLight'; 
+}
+
+.all-faq {
+    margin-right: 10rem;
+    margin-left: 10rem; 
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
+}
+
+.faq-title {
+    font-family: 'Avenir'; 
+    color: #3f3f3f; 
+    margin-left: 10rem; 
+}
+
+.faq-text {
+    font-size: 20px;
+    margin-left: 10rem; 
+    margin-right: 10rem; 
+    margin-bottom: 7rem; 
+}

@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+}
+
+header img {
+    max-width: 325px;  
+    margin: 5rem;
+}
+
+header ul {
+    text-align: center;
+    padding-inline-start: 0px;
+}
+
+ul li { 
+    font-size: 30px;
+    font-family: 'EvogriaIt'; 
+    display: inline-block;
+    margin: 1.5rem; 
+    color: #3f3f3f; 
+}
+
+li:hover {
+    color: #FC6272;
+}

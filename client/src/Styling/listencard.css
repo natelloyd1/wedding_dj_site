@@ -1,0 +1,27 @@
+.cardwrap {
+    padding-top: 5rem; 
+    padding-bottom: 2rem; 
+    position: relative;
+    align-items: center;
+    font-family: "Avenir";
+    color: #3f3f3f; 
+    margin: auto;
+    width: 50%;
+}
+
+.react-player {
+    margin: 2rem; 
+}
+
+.cardwrap h3 {
+    margin-left: 2rem; 
+    font-size: 22px;
+}
+
+.cardwrap p {
+    margin-left: 2rem; 
+    font-family: 'AvenirLight';
+    padding-bottom: 3rem;
+    font-size: 20px; 
+}
+

@@ -1,0 +1,22 @@
+.review-wrap {
+    text-align: center;
+    margin: 5rem; 
+    font-family: 'AvenirLight'; 
+}
+
+.all-reviews {
+    text-align: center;
+    margin-right: 10rem;
+    margin-left: 10rem; 
+    margin-top: 3rem; 
+    margin-bottom: 3rem; 
+}
+
+.review-wrap h3 {
+    font-family: 'Avenir'; 
+    color: #3f3f3f; 
+}
+
+.review-wrap p {
+    font-size: 20px;
+}
