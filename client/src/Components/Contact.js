@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 class Contact extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
 
         this.state = {
