@@ -7,14 +7,6 @@
     font-family: 'AvenirLight'; 
 }
 
-@media (max-width: 900px) {
-    .faq-wrap {
-    margin-top: 3rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    }
-}
-
 @media (min-width: 901px) {
     .all-reviews {
     font-size: 22px;

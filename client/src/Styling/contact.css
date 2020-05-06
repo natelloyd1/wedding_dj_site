@@ -13,7 +13,7 @@
 
 .numb {
     font-family: "Avenir";
-    font-size: 20px; 
+    font-size: 22px; 
 }
 
 .form-wrap {
@@ -23,12 +23,12 @@
 legend {
     text-align: left;
     margin: 0.5rem; 
-    font-size: 20px;
+    font-size: 22px;
     font-family: "AvenirLight";
 }
 
 input {
-    font-size: 20px;
+    font-size: 22px;
     font-family: "AvenirLight";
     width: 100%; 
 }
@@ -63,15 +63,15 @@ input {
     }
 }
 
-
 textarea {
     min-width: 100%;
-    min-height: 100px;
+    min-height: 200px;
     resize: vertical;
-    font-size: 20px;
+    font-size: 22px;
     border-style: solid;
     border-color: lightgray;
     border-width: 2px;
+    padding: 10px;
 }
 
 
@@ -89,7 +89,7 @@ textarea {
 
 button {
     min-height: 2rem;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .input-button {
@@ -115,4 +115,5 @@ button {
 input {
     border-style: solid;
     border-color: lightgray;
+    padding: 10px; 
 }

@@ -1,13 +1,13 @@
-@media (max-width: 900px) {
+@media (max-width: 1080px) {
     .faq-wrap {
-        margin-top: 10rem;
+        margin-top: 6rem;
         margin-right: 1rem;
         margin-left: 1rem; 
         font-family: 'AvenirLight'; 
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1080px) {
     .faq-wrap {
         margin-top: 10rem; 
         font-family: 'AvenirLight'; 
@@ -16,7 +16,14 @@
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 700px) {
+    .faq-wrap {
+        margin-top: 10rem; 
+        font-family: 'AvenirLight'; 
+    }
+}
+
+@media (min-width: 1080px) {
     .faq-text {
         font-size: 22px;
         margin-left: 10rem; 
@@ -25,25 +32,25 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1079px) {
     .faq-text {
         font-size: 22px;
-        margin-left: 2rem; 
-        margin-right: 2rem; 
+        margin-left: 1rem; 
+        margin-right: 1rem; 
         margin-bottom: 6rem; 
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1079px) {
     .faq-title {
         font-size: 25px;
         font-family: 'Avenir'; 
         color: #3f3f3f; 
-        margin-left: 2rem; 
+        margin-left: 1rem; 
         }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1080px) {
     .faq-title {
         font-size: 26px;
         font-family: 'Avenir'; 

@@ -3,9 +3,9 @@
         padding-top: 5rem; 
         padding-bottom: 2rem; 
         position: relative;
-        align-items: center;
         font-family: "Avenir";
         color: #3f3f3f; 
+        text-align: center;
         }
 }
 
@@ -23,21 +23,45 @@
         font-family: "Avenir"; 
         color: #3f3f3f; 
         }
+
+        .cardwrap h3 {
+            margin-left: 2rem; 
+            font-size: 24px;
+        }
+
+        .cardwrap p {
+            margin-left: 2rem; 
+            font-family: 'AvenirLight';
+            padding-bottom: 3rem;
+            font-size: 22px; 
+        }
     }
+
+@media (max-width: 600px) {
+
+    .cardwrap {
+        padding-top: 5rem; 
+        padding-bottom: 2rem; 
+        position: relative;
+        font-family: "Avenir"; 
+        color: #3f3f3f; 
+        text-align: center;
+    }
+
+    .cardwrap h3 {
+        font-size: 24px;
+    }
+    
+    .cardwrap p {
+        font-family: 'AvenirLight';
+        padding-bottom: 3rem;
+        font-size: 22px; 
+    }
+}
+
 
 .react-player {
     margin: 2rem; 
 }
 
-.cardwrap h3 {
-    margin-left: 2rem; 
-    font-size: 24px;
-}
-
-.cardwrap p {
-    margin-left: 2rem; 
-    font-family: 'AvenirLight';
-    padding-bottom: 3rem;
-    font-size: 22px; 
-}
 
