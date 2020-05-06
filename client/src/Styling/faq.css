@@ -1,24 +1,60 @@
-.faq-wrap {
-    margin: 5rem; 
-    font-family: 'AvenirLight'; 
+@media (max-width: 900px) {
+    .faq-wrap {
+        margin-top: 10rem;
+        margin-right: 1rem;
+        margin-left: 1rem; 
+        font-family: 'AvenirLight'; 
+    }
+}
+
+@media (min-width: 901px) {
+    .faq-wrap {
+        margin-top: 10rem; 
+        font-family: 'AvenirLight'; 
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 901px) {
+    .faq-text {
+        font-size: 22px;
+        margin-left: 10rem; 
+        margin-right: 10rem; 
+        margin-bottom: 7rem; 
+    }
+}
+
+@media (max-width: 900px) {
+    .faq-text {
+        font-size: 22px;
+        margin-left: 2rem; 
+        margin-right: 2rem; 
+        margin-bottom: 6rem; 
+    }
+}
+
+@media (max-width: 900px) {
+    .faq-title {
+        font-size: 25px;
+        font-family: 'Avenir'; 
+        color: #3f3f3f; 
+        margin-left: 2rem; 
+        }
+}
+
+@media (min-width: 901px) {
+    .faq-title {
+        font-size: 26px;
+        font-family: 'Avenir'; 
+        color: #3f3f3f; 
+        margin-left: 10rem; 
+        margin-top: 5rem
+        }
 }
 
 .all-faq {
     margin-right: 10rem;
     margin-left: 10rem; 
-    margin-top: 3rem; 
-    margin-bottom: 3rem; 
-}
-
-.faq-title {
-    font-family: 'Avenir'; 
-    color: #3f3f3f; 
-    margin-left: 10rem; 
-}
-
-.faq-text {
-    font-size: 20px;
-    margin-left: 10rem; 
-    margin-right: 10rem; 
-    margin-bottom: 7rem; 
+    margin-bottom: 3rem;
 }

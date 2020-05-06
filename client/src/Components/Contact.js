@@ -1,58 +1,105 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
+export default function Contact() {
 
-class Contact extends Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            name: '',
-            email: '',
-            message: '',
-        }; 
-        this.handleChange = this.handleChange.bind(this); 
+    const [name, setName] = useState('');
+	const handleName = e => {
+		setName(e.currentTarget.value);
+    };
+    
+    const [subject, setSubject] = useState('');
+    const handleSubject = e => {
+        setSubject(e.currentTarget.value); 
     }
 
-        handleChange = (event) => {
-            this.setState({[event.target.name]: event.target.value })
-        }
+	const [email, setEmail] = useState('');
+	const handleEmail = e => {
+		setEmail(e.currentTarget.value);
+	};
 
-        async handleSubmit(event) {
-            event.preventDefault()
+	const [message, setMessage] = useState('');
+	const handleMessage = e => {
+		setMessage(e.currentTarget.value);
+	};
 
-            const { name, email, message } = this.state; 
+  function sendEmail(e) {
+    e.preventDefault();
 
-            const form = await axios.post('/api/form', {
-                name, email, message }) 
-        }
+    let templateParams = {
+        from_name: {name},
+        email: {email},
+        subject: {subject},
+        message: {message},
+       }
 
+    emailjs.sendForm('wedding_dj', 'template_KIhfb3qe', templateParams, 'user_IMkRHHnMyI2k74WIRnqQJ')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
 
-    render() {
-        return (
-            <form>
-                <div class="details-area">
-                    <h2>Contact</h2>
-                        <label for="message"></label>
-                        <legend>Message</legend>
-                        <textarea id="message" name="message" onChange={this.handleChange}></textarea>
+  return (
 
-                        <label for="name"></label>
-                        <legend>Name*</legend>
-                        <input required type="text" name="name" id="name" onChange={this.handleChange} />
+    <>
+    <div className="sub-wrap">
 
-                        <label for="inputemail"></label>
-                        <legend>Email*</legend>
-                        <input required type="email" id="inputemail" name="email" onChange={this.handleChange} />
+    <h3 className="small-text">Call me on the telephone</h3>
+    
+    <h3 className="numb">07879 698 398</h3>
 
-                    <input type="submit" value="Submit" />
-                </div>
-            </form>
-        );
-    }
-};
+    <h3 className="small-text">Or punch your deets into the form below</h3>
 
-export default Contact;
+    </div>
 
+    <div className="form-wrap">
 
+    <form onSubmit={ sendEmail } >
+        <div className="input-wrap">
+			<legend>Name</legend>
+				<input
+					value={ name }
+					type='text'
+					name='name'
+					onChange={ handleName }
+				/>
+        </div>
 
+        <div className="input-wrap">   
+            <legend>Email</legend>
+				<input
+					value={ email }
+					type='email'
+					name='email'
+					onChange={ handleEmail }
+				/>
+        </div>
+
+        <div className="input-wrap">  
+            <legend>Subject</legend>
+				<input
+					value={ subject }
+					type='subject'
+					name='subject'
+					onChange={ handleSubject }
+				/>
+        </div>
+            
+        <div className="input-wrap">  
+			<legend>Message</legend>
+				<textarea
+                    className="msg-box"
+					value={ message }
+					name='message'
+					onChange={ handleMessage }
+				/>
+            </div>
+
+			<button className='input-button' type='submit'>Send</button>
+		</form>
+        </div>
+        </>
+  );
+}

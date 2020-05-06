@@ -1,7 +1,20 @@
-.frontimg {
-    margin: 2rem; 
+
+@media (max-width: 900px) {
+.front-img {
+        max-width: 25rem;
+        width: 100%;
+    }
 }
 
-.frontwrap {
+@media (min-width: 901px) {
+    .front-img {
+        max-width: 60rem;
+        width: 100%
+    }
+}
+    
+
+.front-wrap {
+    margin-top: 3rem;
     text-align: center;
 }

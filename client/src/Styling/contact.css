@@ -1,0 +1,118 @@
+.sub-wrap {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    text-align: center;
+}
+
+.small-text {
+    font-family: "AvenirLight";
+    font-size: 22px; 
+}
+
+.numb {
+    font-family: "Avenir";
+    font-size: 20px; 
+}
+
+.form-wrap {
+    text-align: center;
+}
+
+legend {
+    text-align: left;
+    margin: 0.5rem; 
+    font-size: 20px;
+    font-family: "AvenirLight";
+}
+
+input {
+    font-size: 20px;
+    font-family: "AvenirLight";
+    width: 100%; 
+}
+
+@media (max-width: 900px) {
+    form {
+        text-align: center;
+        display: inline-block;
+        min-width: 90%;
+    }
+}
+
+@media (min-width: 901px) {
+    form {
+        text-align: center;
+        display: inline-block;
+        min-width: 30%;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .input-wrap {
+        margin: 1rem; 
+    }
+}
+
+@media (min-width: 901px) {
+    .input-wrap {
+        margin: 3rem; 
+    }
+}
+
+
+textarea {
+    min-width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    font-size: 20px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 2px;
+}
+
+
+@media (min-width: 601px) {
+    .input-button {
+        min-width: 10%;
+    }
+}
+
+@media (max-width: 600px) {
+    .input-button {
+        min-width: 40%;
+    }
+}
+
+button {
+    min-height: 2rem;
+    font-size: 20px;
+}
+
+.input-button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #353c3a;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    color:white;
+    background-color: #353c3a;
+    text-align:center;
+    transition: all 0.2s;
+    }
+
+.input-button:hover {
+    color: #353c3a;
+    background-color: white;
+    }   
+
+input {
+    border-style: solid;
+    border-color: lightgray;
+}

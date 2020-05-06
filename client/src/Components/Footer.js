@@ -1,7 +1,7 @@
 import React from 'react';
-import facebook from '../Icons/facebookcircle.png'; 
-import instagram from '../Icons/instacircle1.png'; 
-import soundcloud from '../Icons/resizedsoundcloud.png'; 
+import facebook from '../Icons/facebookcircleC.png'; 
+import instagram from '../Icons/instacircle1C.png'; 
+import soundcloud from '../Icons/resizedsoundcloudC.png'; 
 
 function Footer () {
 
