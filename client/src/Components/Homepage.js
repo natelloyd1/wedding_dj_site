@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import mobile from '../Images/frontmobile.png'; 
 import desktop from '../Images/frontimglarge.png'; 
+import Instagram from './Instagram';
 
 const Homepage = () => {
 
     const imageUrl = useWindowWidth() >= 900 ? desktop : mobile;
 
     return (
-
+    <>
         <div className="front-wrap">
                 <img className="front-img" alt="Welcome to my website" src={imageUrl} />      
         </div>  
+        <div>
+            <Instagram />
+        </div>
+    </>
     );
 };
 

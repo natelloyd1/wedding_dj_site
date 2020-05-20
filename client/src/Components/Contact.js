@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 
-export default function Contact() {
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
+function Contact() {
 
     const [name, setName] = useState('');
-	const handleName = e => {
-		setName(e.currentTarget.value);
-    };
+    const handleName = e => {
+      setName(e.currentTarget.value);
+      };
     
     const [subject, setSubject] = useState('');
     const handleSubject = e => {
@@ -21,29 +26,27 @@ export default function Contact() {
 	const [message, setMessage] = useState('');
 	const handleMessage = e => {
 		setMessage(e.currentTarget.value);
-	};
+  };
+  
+  const sendEmail = e => {
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...useState })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
 
-  function sendEmail(e) {
     e.preventDefault();
+    console.log((name), (email), (message)); 
+  };
 
-    let templateParams = {
-        from_name: {name},
-        email: {email},
-        subject: {subject},
-        message: {message},
-       }
-
-    emailjs.sendForm('wedding_dj', 'template_KIhfb3qe', templateParams, 'user_IMkRHHnMyI2k74WIRnqQJ')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  }
 
   return (
 
     <>
+
     <div className="sub-wrap">
 
     <h3 className="small-text">Call me on the telephone</h3>
@@ -56,50 +59,58 @@ export default function Contact() {
 
     <div className="form-wrap">
 
-    <form onSubmit={ sendEmail } >
+    <form onSubmit={ sendEmail }  >
+
         <div className="input-wrap">
+
 			<legend>Name</legend>
-				<input
-					value={ name }
-					type='text'
-					name='name'
-					onChange={ handleName }
-				/>
+          <input
+            value={ name }
+            type='text'
+            name='name'
+            onChange={ handleName }
+          />
         </div>
 
         <div className="input-wrap">   
-            <legend>Email</legend>
-				<input
-					value={ email }
-					type='email'
-					name='email'
-					onChange={ handleEmail }
-				/>
+          <legend>Email</legend>
+            <input
+              value={ email }
+              type='email'
+              name='email'
+              onChange={ handleEmail }
+            />
         </div>
 
         <div className="input-wrap">  
-            <legend>Subject</legend>
-				<input
-					value={ subject }
-					type='subject'
-					name='subject'
-					onChange={ handleSubject }
-				/>
+          <legend>Subject</legend>
+            <input
+              value={ subject }
+              type='subject'
+              name='subject'
+              onChange={ handleSubject }
+            />
         </div>
             
         <div className="input-wrap">  
-			<legend>Message</legend>
-				<textarea
-                    className="msg-box"
-					value={ message }
-					name='message'
-					onChange={ handleMessage }
+          <legend>Message</legend>
+            <textarea
+              className="msg-box"
+              value={ message }
+              name='message'
+              onChange={ handleMessage }
 				/>
-            </div>
-
-			<button className='input-button' type='submit'>Send</button>
-		</form>
         </div>
+
+			<input className='input-button' type='submit' value="Send" />
+
+		  </form>
+
+        </div>
+
         </>
-  );
-}
+        
+    );
+  }
+
+export default Contact; 
