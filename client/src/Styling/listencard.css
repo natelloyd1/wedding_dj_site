@@ -61,7 +61,15 @@
 
 
 .react-player {
-    margin: 2rem; 
+    box-sizing: border-box;
+    padding: 0 2rem; 
+    margin: 2rem 0;
+}
+
+.react-player iframe {
+    height: 100%;
+    max-width: 300px;
+    width: 100%;
 }
 
 

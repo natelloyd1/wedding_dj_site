@@ -14,7 +14,7 @@ class ListenCard extends Component {
                     url={this.props.link}
                     playing={false}
                     lightmode={true}
-                    width="19rem"
+                    width="100%"
                 />
             </div>
         );
