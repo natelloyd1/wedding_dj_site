@@ -34,7 +34,7 @@ function Contact() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...useState })
-    })
+    }) 
       .then(() => alert("Success!"))
       .catch(error => alert(error));
 
@@ -59,7 +59,7 @@ function Contact() {
 
     <div className="form-wrap">
 
-    <form onSubmit={ sendEmail }  >
+    <form onSubmit={ sendEmail } name="contact" action="/" method="POST" data-netlify="true" >
 
         <div className="input-wrap">
 

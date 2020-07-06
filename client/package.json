@@ -15,7 +15,7 @@
     "emailjs-com": "^2.4.1",
     "express": "^4.17.1",
     "jquery": "^3.5.0",
-    "netlify-cli": "^2.50.0",
+    "netlify-cli": "^2.53.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-instafeed": "^1.0.0",
