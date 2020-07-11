@@ -20,7 +20,7 @@
     text-align: center;
 }
 
-legend {
+label {
     text-align: left;
     margin: 0.5rem; 
     font-size: 22px;
@@ -54,12 +54,14 @@ input {
 @media (max-width: 900px) {
     .input-wrap {
         margin: 1rem; 
+        text-align: left;
     }
 }
 
 @media (min-width: 901px) {
     .input-wrap {
         margin: 3rem; 
+        text-align: left;
     }
 }
 
