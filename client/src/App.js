@@ -8,6 +8,7 @@ import Listen from './Components/Listen/Listen';
 import Review from './Components/Reviews/Review'; 
 import Faq from './Components/faq'; 
 import Contact from './Components/Contact'; 
+import Success from './Components/Success'; 
 
 const App = () => {
   return (
@@ -29,6 +30,10 @@ const App = () => {
             <Route exact path="/contact">
               <Contact /> 
             </Route> 
+            <Route exact path="/success">
+              <Success /> 
+            </Route> 
+
         </Switch>
         <Footer /> 
       </Router>

@@ -59,7 +59,7 @@ function Contact() {
 
     <div className="form-wrap">
 
-    <form name="contact" action="/" method="POST" data-netlify="true" >
+    <form name="contact" action="/success" method="POST" data-netlify="true" >
     <input type='hidden' name='form-name' value='contact' />
 
       
@@ -71,6 +71,7 @@ function Contact() {
             type='text'
             name='name'
             id="yourname"
+            required
           />
         </div>
 
@@ -82,6 +83,7 @@ function Contact() {
               type='email'
               name='email'
               id="youremail"
+              required
             />
         </div>
 
@@ -93,6 +95,7 @@ function Contact() {
               type='subject'
               name='subject'
               id="yoursubject"
+              required
             />
         </div>
             
@@ -104,7 +107,7 @@ function Contact() {
               className="msg-box"
               name='message'
               id="yourmessage"
-
+              required
 				/>
         </div>
 

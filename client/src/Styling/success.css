@@ -1,0 +1,11 @@
+.success-wrap {
+    margin-top: 10rem;
+    text-align: center;
+    min-height: 15rem;
+}
+
+.success-message {
+    font-family: "AvenirLight";
+    font-size: 22px; 
+    text-align: center;
+}
